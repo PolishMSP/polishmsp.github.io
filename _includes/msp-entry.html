@@ -1,5 +1,4 @@
 {% assign process_step = site.data.codes.process_step[include.msp.process_step] %}
-{% assign authority = site.authorities | where:"slug", include.msp.authority | first %}
 {% assign has_previous_author = false %}
 
 <article class="hentry">
@@ -21,8 +20,6 @@
               <a href="{{ authority.url }}" title="{{ authority.title }}">{{ authority.title }}</a>  
             {% endif %}   
           {% endfor %}
-
-          <a href="{{ authority.website }}" title="{{ authority.title }}" target="_blank">{{ authority.title }}</a>
         </span>
         <span class="tag process-step {{ include.msp.process_step }}" title="{{ process_step.description }}">
             {{ process_step.name }}
