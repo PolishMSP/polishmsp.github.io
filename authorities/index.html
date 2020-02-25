@@ -21,7 +21,9 @@ layout: default
     </div>
 </article>
 
-{% for authority in site.authorities %}
+{% assign authorities = site.authorities | sort: "order" %}
+
+{% for authority in authorities %}
   {% include authority-entry.html authority=authority %}
 {% endfor %}
 
