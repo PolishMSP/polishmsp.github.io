@@ -1,0 +1,27 @@
+process_step:
+
+  preparation: 
+    name: Preparation
+    description: Plan in the process of preparation - no official decision to elaborate the plan yet, 
+      but legislation is in the place and/or preparatory work for MSP has been launched 
+      (preparation of the ToR, context analysis etc.)
+
+  elaboration: 
+    name: Elaboration
+    description: Plan is under elaboration - decision of the starting the plan has been taken 
+      by responsible authority and officially announced
+
+  adoption: 
+    name: Adoption
+    description: Plan is in the process of being legally adopted
+
+  legal_force: 
+    name: Legal force
+    description: Plan is already adopted and is in force
+
+  obsolete: 
+    name: Obsolete
+    description: Plan has been substituted by another plan, or is not any longer in force
+
+
+

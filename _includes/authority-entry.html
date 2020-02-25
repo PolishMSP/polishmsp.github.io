@@ -1,0 +1,17 @@
+<article class="hentry">
+    {% if include.authority.logo %}
+    <header>
+        {% if include.include_image and include.authority.image %}
+          <div class="entry-image-index">
+            <img src="{{ site.url }}/images/{{ include.authority.image }}" alt="{{ include.authority.title }}">
+          </div><!-- /.entry-image -->
+          <p>&nbsp;</p>
+        {% endif %}
+        <a href="{{ include.authority.url }}"><img class="authority-logo" src="{{include.authority.logo}}" alt="{{include.authority.name}}" /></a>
+    </header>
+    {% endif %}
+    <div class="entry-content">
+      <h2><a href="{{ include.authority.url }}">{{ include.authority.title }}</a></h2>
+      <p>{{ include.authority.content | markdownify }}</p>
+    </div><!-- /.entry-content -->
+</article><!-- /.hentry -->

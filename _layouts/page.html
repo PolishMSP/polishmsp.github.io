@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+
+<article class="hentry">
+  <header>
+    {% if page.image %}
+      <div class="entry-image-index">
+        <img src="{{ site.url }}/images/{{ page.image }}" alt="{{ page.title }}">
+      </div>
+    {% endif %}
+  </header>
+  <div class="entry-content">
+    {{ content }}
+  </div><!-- /.entry-content -->
+</article>
+
+
+{% include read-more.html authority=authority %}

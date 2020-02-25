@@ -1,0 +1,28 @@
+---
+title: Authorities
+layout: default
+---
+
+<article class="hentry">
+    <div class="entry-content">
+      <h2>Polish MSP Authorities</h2>
+      <p>Polish sea areas are governed by the 
+        <a href="/authorities/mgm">Minister responsible for maritime economy affairs</a>. 
+        The sea areas and coast management areas are administered by his regional 
+        maritime administration - the Directors of Maritime Offices. 
+      </p>
+      <p>
+        Drafts of Maritime spatial plans are prepared by 
+        <a href="/authorities/maritime-offices/">Directors of Maritime Offices</a>. 
+        After public consultations those drafts are adopted by ordinance by the Council of Ministers. 
+        Tasks related to international consultation process according to the Espoo Convention are
+        conducted by <a href="/authorities/gdos">General Directorate for Environmental Protection</a>.
+      </p>
+    </div>
+</article>
+
+{% for authority in site.authorities %}
+  {% include authority-entry.html authority=authority %}
+{% endfor %}
+
+{% include read-more.html authority=authority %}

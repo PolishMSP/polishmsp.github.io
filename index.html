@@ -1,0 +1,11 @@
+---
+layout: default
+title: Maritime Spatial Plans of Polish Sea Areas
+---
+
+{% for post in site.posts %}
+  {% include msp-entry.html msp=post %}
+{% endfor %}
+
+
+{% include read-more.html %}

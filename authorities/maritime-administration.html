@@ -1,0 +1,15 @@
+---
+title: Maritime Administration
+layout: default
+---
+
+{% assign mgm = site.authorities | where:"slug", "mgm" | first %}
+{% assign umgdy = site.authorities | where:"slug", "umgdy" | first %}
+{% assign ums = site.authorities | where:"slug", "ums" | first %}
+
+{% include authority-entry.html authority=mgm %}
+{% include authority-entry.html authority=umgdy %}
+{% include authority-entry.html authority=ums %}
+  
+
+{% include read-more.html %}

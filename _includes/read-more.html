@@ -1,0 +1,29 @@
+{% assign authorities_page = site.pages | where:"url", "/authorities/" | first %}
+{% assign legislation_page = site.pages | where:"url", "/legislation/" | first %}
+
+<div class="read-more">
+
+    <div class="read-more-header">
+        <a class="read-more-btn">{{ site.strings.read_more }}</a>
+    </div>
+
+    {% if page.url != "/-always-show-link-to-main-page" %}
+    <div class="read-more-content">
+        <h3><a href="{{ site.url }}{{ post.url }}" title="{{ site.description }}">{{ site.description }}</a></h3>
+    </div>
+    {% endif %}
+    
+
+    <div class="read-more-list">
+        <div class="list-item">
+            <h4><a href="{{ authorities_page.url }}" title="{{ authorities_page.title }}">{{ authorities_page.title }}</a></h4>
+            <span> </span>
+        </div>
+        <div class="list-item">
+            <h4><a href="{{ legislation_page.url }}" title="{{ legislation_page.title }}">{{ legislation_page.title }}</a></h4>
+            <span> </span>
+        </div>
+    </div>
+
+
+</div><!-- /.read-more -->
