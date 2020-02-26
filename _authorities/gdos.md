@@ -8,7 +8,7 @@ layout: authority
 
 National Environmental Authority responsible for implementation of environmental protection policies 
 including environmental protection management for Natura 2000 areas and investment process control.
-The institution also conduct the tasks related to international consultation process according to the Espoo Convention.
+The institution also conducts the tasks related to international consultation process according to the Espoo Convention.
 
 ### Espoo contact point
 
