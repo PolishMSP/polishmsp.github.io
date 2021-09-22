@@ -9,18 +9,6 @@
         </div><!-- /.entry-image -->
       {% endif %}
       <div class="entry-meta">
-        <span class="author">
-
-          {% for authority in site.authorities %}        
-            {% if include.msp.author contains authority.slug %}   
-              {% if has_previous_author %}
-              <span style="margin-left: 0.5em; margin-right: 0.5em;"> | </span>
-              {% endif %}
-              {% assign has_previous_author = true %}
-              <a href="{{ authority.url }}" title="{{ authority.title }}">{{ authority.title }}</a>  
-            {% endif %}   
-          {% endfor %}
-        </span>
         <span class="tag process-step {{ include.msp.process_step }}" title="{{ process_step.description }}">
             {{ process_step.name }}
         </span>
